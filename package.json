@@ -6,7 +6,7 @@
   "scripts": {
     "start": "concurrently \"npm run backend\" \"npm run frontend\"",
     "backend": "cd backend && npm run start",
-    "frontend": "cd frontend && npm run start",
+    "frontend": "cd frontend && PORT=3001 npm start",
     "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install"
   },
   "dependencies": {
