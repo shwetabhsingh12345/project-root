@@ -1,0 +1,25 @@
+/* frontend/src/index.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    color: #495057;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

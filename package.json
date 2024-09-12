@@ -1,0 +1,17 @@
+{
+  "name": "project-root",
+  "version": "1.0.0",
+  "description": "```\r project-root\r ├─ .gitignore\r ├─ README.md\r ├─ backend\r │  ├─ .env\r │  ├─ app.js\r │  ├─ config\r │  │  └─ db.js\r │  ├─ controllers\r │  │  ├─ apiController.js\r │  │  ├─ authController.js\r │  │  ├─ productController.js\r │  │  └─ profileController.js\r │  ├─ error.log\r │  ├─ middleware\r │  │  ├─ authMiddleware.js\r │  │  └─ errorHandler.js\r │  ├─ models\r │  │  ├─ productModel.js\r │  │  └─ userModel.js\r │  ├─ package-lock.json\r │  ├─ package.json\r │  ├─ routes\r │  │  ├─ apiRoutes.js\r │  │  ├─ authRoutes.js\r │  │  ├─ productRoutes.js\r │  │  └─ profileRoutes.js\r │  ├─ services\r │  │  ├─ cacheService.js\r │  │  └─ jwtService.js\r │  ├─ sockets\r │  │  └─ notificationSocket.js\r │  └─ utils\r │     └─ logger.js\r └─ frontend\r    ├─ node_modules\r    │  └─ .cache\r    │     └─ default-development\r    │        ├─ 0.pack\r    │        └─ index.pack\r    ├─ package-lock.json\r    ├─ package.json\r    ├─ public\r    │  └─ index.html\r    └─ src\r       ├─ App.css\r       ├─ App.js\r       ├─ components\r       ├─ index.css\r       ├─ index.js\r       ├─ pages\r       │  ├─ ExternalApi.js\r       │  ├─ Home.js\r       │  ├─ Login.js\r       │  ├─ Products.js\r       │  ├─ Profile.js\r       │  └─ Register.js\r       └─ services",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
